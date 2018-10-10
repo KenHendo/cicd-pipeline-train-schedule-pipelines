@@ -1,15 +1,13 @@
 # cicd-pipeline-train-schedule-pipelines
 
-This is a simple train schedule app written using nodejs. It is intended to be used as a sample application for a series of hands-on learning activities.
+This is a simple train schedule app written using nodejs. It is intended to be used as a basic example application to use with the build of a CI / CD pipeline
 
-## Running the app
+## CI /CD steps implement thus far
 
-You need a Java JDK 7 or later to run the build. You can run the build like this:
+Gradle automated build using Gradle Wrapper
+Deployment of Jenkins server into Azure and CI via manually triggered Jenkins build
+Build automation via Jenkinsfile and webhooks to this Git Repo's Master Branch
+Expanded Jenkinsfile with addtional stages.  The project now builds, tests and deploys to a 'staging' server before optional deployment to a 'production' server.
 
-    ./gradlew build
-
-You can run the app with:
-
-    ./gradlew npm_start
-
-Once it is running, you can access it in a browser at [http://localhost:3000](http://localhost:3000)
+##To Do
+Dockerise application and deploy container via Jenkins rather than to a pre-configured web server.
